@@ -1,0 +1,314 @@
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_
+
+						COLOR INDEX
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_
+
+# /*
+# white: #fafafa;
+# black: #333333;
+# red: #EC173A;
+# green: #2FAA8F;
+# tan: #FFF1CB;
+# orange: #FFAD30;
+# sidebar: #E0E4CC;
+# */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_
+
+						GENERAL SELECTORS
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_*/
+
+
+a:link { color: #333333; text-decoration: none; font-family: sans-serif;}
+a:visited { color: #333333; text-decoration: none;}
+a:hover { color: #fafafa; }
+a:active { color: #EC173A; }
+
+
+body {
+	font-size: 62.5%;
+	background-color: #456;
+}
+
+table{
+	border-collapse: collapse;
+	margin-top: 20px;
+	display: inline-block;
+	position: absolute;
+	left:40px;
+	top:-1px;
+}
+
+tr{	height: 10px;}
+td:nth-child(1){
+	width:68px;
+
+}
+td:nth-child(2){width:15px;}
+td:nth-child(3){width:40px;}
+
+tr:nth-child(2),tr:nth-child(3),tr:nth-child(4),tr:nth-child(5),tr:nth-child(8),tr:nth-child(9),tr:nth-child(10),tr:nth-child(11){
+	border: 1px solid black;
+}
+#top{
+	border-top: 1px solid #fafafa;
+}
+#mid{
+	border-bottom: 1px solid #fafafa;
+} 
+#bottom, #bottom_two{
+	border-bottom: 1px solid #fafafa;
+}
+
+
+p, li {
+	font-family: sans-serif;
+}
+
+li {
+	list-style-type: none;
+	line-height: 2em;
+	font-size: 3em;
+	margin: 50px;
+	background-color: #234;
+	color: #fafafa;
+	width: 300px;
+	border-radius: 10px;
+}
+li:hover, #menu_tab:hover, #mute:hover{
+	background-color: #4da;
+	color: #333;
+}
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_
+
+						ID
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_*/
+
+#menu, #question, #score{
+	border: 1px #234 solid;
+	background-color: #fafafa;
+	text-align:center;
+	display: inline-block;
+
+}
+#question{
+	float: left;
+}
+
+#score{
+	float: right;
+}
+#keyboard_holder, #user{
+	display: none;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#user, #menu{
+	position:fixed;
+	top:10%;
+	left:50%;
+	margin-left: -200px;
+	border-radius: 10px;
+}
+
+#question, #score, #sheet{
+	height:100px;
+	width: 200px;
+	position: relative;
+}
+#menu{
+	height: 500px;
+	width: 400px;
+
+	box-shadow: 0px 0px 20px #333;
+
+}
+#menu_tab, #mute{
+	width:120px;
+	border-radius: 10px;
+	background-color: #234;
+	font-size: 3em;
+	margin-top: 5px;
+	color: #fafafa;
+	text-align: center;
+}
+
+#question{
+	border-radius: 10px 0px 0px 10px;
+}
+#score{
+	border-radius: 0px 10px 10px 0px;
+}
+
+
+#question p, #score p, #sheet p{
+	font-size: 4em;
+	line-height: 2.5em;
+}
+
+#question p.trebleClef{
+	font-size: 90px;
+	line-height: 90px;
+}
+#question p.bassClef{
+	font-size: 52px;
+	line-height: 82px;
+}
+
+#keyboard_holder{
+	position: fixed;
+	margin-top:100px;
+	left:50%;
+	top:20%;
+	margin-left:-560px;
+	width:1120;
+}
+
+#note{
+	border-radius: 20px;
+	height: 7px;
+	width: 5px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 3px solid #333;
+	border-right: 3px solid #333;
+	position: absolute;
+	left:110px;
+	top:10px;
+}
+#note p{
+	margin-left: -30px;
+	margin-top: -22px;
+	font-size: 20px;
+}
+
+#mute{
+	padding: 10px 0px 20px 0px;
+	position: relative;
+}
+
+#speaker_box{
+	background-color: #fafafa;
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	left: 40px;
+	border-radius: 1px;
+}
+#speaker_cone{
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:15px solid #fafafa; 
+	position: absolute;
+	left: 40px;
+	top: 5px;
+	border-radius: 1px;
+}
+#speaker_out{
+	font-size: 20px;
+	line-height: 20px;
+	position: absolute;
+	left: 60px;
+	top: 6px;
+}
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_
+
+						CLASS
+
+/*_-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-__-+=+-__-^-_*/
+
+.white{
+	background-color: #fafafa;
+	width:40px;
+	height:200px;
+	z-index: 0;
+}
+.black{
+	background-color: #333;	
+	width:20px;
+	height:140px;
+	z-index: 1;
+}
+
+.key{
+	display: inline-block;
+	position: fixed;
+	border: 1px solid #234;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.d{margin-left: 40px;}
+.e{margin-left: 80px;}
+.f{margin-left: 120px;}
+.g{margin-left: 160px;}
+.a{margin-left: 200px;}
+.b{margin-left: 240px;}
+
+.cs{margin-left: 30px;}
+.ds{margin-left: 70px;}
+.fs{margin-left: 150px;}
+.gs{margin-left: 190px;}
+.as{margin-left: 230px;}
+
+.octave:nth-child(3) .c{
+	/*background-color: #abcdef;*/
+}
+
+.white:hover{
+	background-color: #faf0f0;
+}
+.black:hover{
+	background-color: #533;
+}
+
+.key:active{
+	padding-bottom: 15px;
+}
+
+.octave{
+	display: inline-block;
+	width:280px;
+	height:200px;
+}
+.line{
+	height:1px;
+	background-color: #333;
+	width:80px;
+	margin: 10px 0px 0px 10px;
+}
+
+.trebleClef, .bassClef{
+	display: inline-block;
+	position: absolute;
+	left: 45px;
+	top:8px;
+}
